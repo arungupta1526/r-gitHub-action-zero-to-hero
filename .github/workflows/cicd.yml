@@ -3,7 +3,6 @@ name: CICD
 # Manual click deliver whenever need
 on:
   workflow_dispatch: 
-
 jobs:
   code:
     runs-on: ubuntu-latest
