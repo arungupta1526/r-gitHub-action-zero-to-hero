@@ -1,0 +1,19 @@
+# Thais is workflow name
+name: Hello 
+# run on a trigger
+on:
+  push: 
+    branches: [main]
+# these job are inside workflow
+jobs: 
+# this is the name of job
+  greet:
+  #this is github runner
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: say hello to user
+        run: echo "Hello Dosto"
+
+        name: say hello to user name
+        run: say "hello $USER"
